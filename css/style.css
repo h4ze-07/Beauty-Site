@@ -132,6 +132,7 @@ a:active {
 
 
 .submenu {
+    box-sizing: border-box;
     list-style: none;
     white-space: nowrap;
     position: absolute;
@@ -139,18 +140,26 @@ a:active {
     left: 0;
     display: none;
     padding: 0;
+    margin: 0;
 }
 
 .submenu-item,
 .submenu-item-lvl-2 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     padding: 10px 20px;
     list-style: none;
     background-color: #F13C6E;
     position: relative;
+    border-radius: 4px;
 }
 
 .submenu-link,
 .submenu-link-lvl-2 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     display: block;
     text-decoration: none;
     color: #fff;
@@ -166,11 +175,13 @@ a:active {
 }
 
 .submenu-lvl-2 {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 100%;
     display: none;
     padding: 0;
+    margin: 0;
 }
 
 .submenu-item:hover .submenu-lvl-2 {
