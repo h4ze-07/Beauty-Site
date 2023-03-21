@@ -120,9 +120,61 @@ a:active {
     margin: 0;
 }
 
+.categories-item {
+    position: relative;
+}
+
 .categories-link {
     color: #000;
     text-decoration: none;
+}
+
+
+
+.submenu {
+    list-style: none;
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 0;
+}
+
+.submenu-item,
+.submenu-item-lvl-2 {
+    padding: 10px 20px;
+    list-style: none;
+    background-color: #F13C6E;
+    position: relative;
+}
+
+.submenu-link,
+.submenu-link-lvl-2 {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.submenu-item:hover,
+.submenu-item-lvl-2:hover {
+    background-color: #f13c6fb7;
+}
+
+.categories-item:hover .submenu {
+    display: block;
+}
+
+.submenu-lvl-2 {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    padding: 0;
+}
+
+.submenu-item:hover .submenu-lvl-2 {
+    display: block;
 }
 
 /* OFFER */
